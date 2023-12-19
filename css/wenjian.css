@@ -1,0 +1,303 @@
+body{
+	background-color: rgb(180, 180, 180);
+	color: #ffffff;
+}
+
+p{
+	color: #ffffff;
+}
+
+#tupian{
+	position: absolute;
+}
+.a{
+	position: absolute;
+	background: linear-gradient(rgb(10, 161, 255), rgb(0, 104, 202));
+	height: 50px;
+	width: 100%;
+	top: 200px;
+	left: 0%;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+}
+.a ul{
+	list-style: none; /* 去除默认的列表样式 */
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content:center; /* 两边宽度相等 */
+	align-items: center;
+}
+
+.a ul li{
+	display: flex;
+	transition: background-color 0.3s ease; /* 添加渐变动画效果 */
+}
+
+.a ul li:hover {
+	background-color: rgb(0, 9, 108); /* 鼠标移动到导航项上时的背景颜色 */
+}
+
+.a ul li a{
+
+	color: #fff; /* 设置字体颜色 */
+	text-decoration: none; /* 去除下划线 */
+	padding: 0 30px; /* 设置内边距 */
+	line-height: 50px; /* 设置行高使文字垂直居中 */
+	border-right: 2px solid #000000; /* 添加右边框 */
+}
+
+.a ul li:last-child a {
+	border-right: none; /* 去除最后一个元素的右边框 */
+  }
+
+.aa{
+	position: fixed;
+	top: 0px;
+}
+
+.b{
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-image: url("/img/hqwudhe.png");
+	background-size: 100% 100%; /* 通过百分比设置 */
+    width: 100%;
+    height: 100%;
+	filter: blur(2px); /* 调整模糊程度，单位为像素 */
+}
+
+.c{
+	background:rgba(0,0,0,0.5);
+	position: absolute;
+	padding: 10px;
+	top: 250px;
+	left: 200px;
+	width: calc(100% - 400px);
+    height: 100%;
+}
+
+.ee{
+	background:rgba(0,0,0,0.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 30px;
+    height: 30px;
+
+}
+.de{
+	background:rgba(0,0,0,0.5);
+	position: absolute;
+	top: 300px;
+	left: 20px;
+	width: 140px;
+    height: 500px;
+	border-radius:10px;
+	padding:10px;
+}
+
+.de2{
+	position: fixed; 
+	top: 100px;
+}
+
+.container {
+	position: fixed;
+	display: flex;
+	right: 20px;
+	top: 300px;
+  }
+  
+  .main-content {
+	flex-grow: 1; /* 允许主内容伸缩 */
+  }
+  
+  .sidebar {
+	background: linear-gradient(rgb(10, 161, 255), rgb(0, 104, 202));
+	width: 120px;
+	padding: 20px;
+  }
+  
+  .sidebar h2 {
+	color: #ffffff;
+	margin-top: 0;
+  }
+  
+  .sidebar ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+  }
+  
+  .sidebar ul li {
+	margin-bottom: 10px;
+  }
+  
+  .sidebar ul li a {
+	
+	display: block;
+	color: #b3b3b3;
+	text-decoration: none;
+  }
+
+
+  #zuobian{
+	list-style: none;
+  }
+  #zuobian li{
+	
+	position: relative;
+	left: -30px;
+	width: 80px;
+	transition: background-color 0.3s ease;
+	color: #a0a0a0; 
+	padding: 5px 10px 0px 20px; 
+	line-height: 30px; 
+	border-left: 2px solid #000000;
+
+	text-align: left;
+  }
+
+  #zuobian li:hover {
+	background-color: rgb(0, 9, 108); /* 鼠标移动到导航项上时的背景颜色 */
+}
+
+.gongjuzhengti{
+	margin: 10px;
+	padding: 10px;
+	background-color: #0000005e;
+	border-radius:10px;
+	
+}
+.gongjuxuanxiang{
+	list-style: none; /* 去除默认的列表样式 */
+	padding: 0;
+	margin: 0;
+	align-items: center;
+}
+.gongjuxuanxiang li{
+	float: left;
+	margin: 10px;
+	padding: 10px;
+	width: 200px;
+	height: 100px;
+	border-radius: 10px;
+	background-color: #000000;
+}
+.gongjuxuanxiang li a{
+	color: #fff; /* 设置字体颜色 */
+	width: 100px;
+	text-decoration: none; /* 去除下划线 */
+	border-left: 2px solid #ffffff; /* 添加右边框 */
+	transition: color 0.3s ease; /* 添加渐变动画效果 */
+}
+.gongjuxuanxiang li p{
+	color: #888888; /* 设置字体颜色 */
+	font-size: 10px;
+}
+.gongjuxuanxiang li a:hover {
+	color: #00c8ff;
+}
+
+.lianxi li{
+	margin-top: 10px;
+    margin-bottom: 30px;
+}
+#zuoyesss{
+	list-style: none; /* 去除默认的列表样式 */
+	padding: 0;
+	margin: 0;
+	align-items: center;
+}
+#zuocesss li{
+	position: relative;
+	list-style: none; /* 去除默认的列表样式 */
+	left: -40px;
+	margin: 10px;
+	padding: 10px;
+	width: 100%;
+	height: 150px;
+	border-radius: 10px;
+	background-color: #000000;
+}
+#zuocesss li a{
+	float:none;
+	color: #fff; /* 设置字体颜色 */
+	width: 100px;
+	text-decoration: none; /* 去除下划线 */
+	border-left: 2px solid #ffffff; /* 添加右边框 */
+	transition: color 0.3s ease; /* 添加渐变动画效果 */
+}
+#zuocesss li img{
+	float: right;
+	padding: 10px;
+	
+}
+#zuocesss li p{
+	color: #888888; /* 设置字体颜色 */
+	font-size: 10px;
+}
+#zuocesss li a:hover {
+	color: #00c8ff;
+}
+
+.search-box {
+	display: flex;
+	align-items: center;
+	padding: 10px;
+	background-color: #000000;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+.search-box input{
+	background-color: #000000;
+	flex-grow: 1;
+	border: none;
+	outline: none;
+	font-size: 16px;
+}
+.search-box button {
+	margin-left: 10px;
+	padding: 8px 16px;
+	background-color: #005eab;
+	border: none;
+	border-radius: 5px;
+	color: #000000;
+	font-size: 16px;
+	cursor: pointer;
+}
+.search-box button:hover {
+	background-color: #0069d9;
+}
+
+
+.resou li{
+	transition: background-color 0.3s ease; /* 添加渐变动画效果 */
+	list-style: none;
+	position: relative;
+	left: -40px;
+	padding: 10px;
+	width: calc(100% + 20px);
+	background-color: #00000096;
+}
+.resou li:nth-child(even) {
+	background-color: #00000044;
+  }
+  .resou li:hover {
+	background-color: #7b7b7b;
+}
+
+
+#dianjiwo{
+	text-align: center; 
+	color: #ffffff;
+	background-color: rgba(69, 69, 69, 0.82);
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	font-size: 18px;
+	width: 100px;
+	height: 50px;
+	border-radius: 10px;
+}

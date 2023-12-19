@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>教程</title>
+    <style>
+        p{
+         text-indent: 2em; /* 设置首行缩进为 2em */
+        }
+        .sdivs{
+            background-color: #0000005e;
+        padding: 10px;
+        border-radius:10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <h2>结构体</h2>
+    <p>在 C# 中，结构体是值类型数据结构。它使得一个单一变量可以存储各种数据类型的相关数据。</p>
+    <h4>定义结构体</h4>
+    <p>为了定义一个结构体，您必须使用 struct 语句。struct 语句为程序定义了一个带有多个成员的新的数据类型。
+    </p><p>
+        例如，您可以按照如下的方式声明 Book 结构：</p>
+    <div style="
+    height: 120px;
+    width: 600px;
+" class="sdivs">
+    <pre>
+struct Books
+{
+    public string title;
+    public string author;
+    public string subject;
+    public int book_id;
+};  
+    </pre>
+</div>
+    <h4>C# 结构的特点</h4>
+    <p>您已经用了一个简单的名为 Books 的结构。在 C# 中的结构与传统的 C 或 C++ 中的结构不同。C# 中的结构有以下特点：</p>
+<ul>
+    <li>结构可带有方法、字段、索引、属性、运算符方法和事件。</li>
+    <li>结构可定义构造函数，但不能定义析构函数。但是，您不能为结构定义无参构造函数。无参构造函数(默认)是自动定义的，且不能被改变。</li>
+    <li>与类不同，结构不能继承其他的结构或类。</li>
+    <li>结构不能作为其他结构或类的基础结构。</li>
+    <li>结构可实现一个或多个接口。</li>
+    <li>结构成员不能指定为 abstract、virtual 或 protected。</li>
+    <li>当您使用 New 操作符创建一个结构对象时，会调用适当的构造函数来创建结构。与类不同，结构可以不使用 New 操作符即可被实例化。</li>
+    <li>如果不使用 New 操作符，只有在所有的字段都被初始化之后，字段才被赋值，对象才被使用。</li>
+</ul>
+    <h4>类 vs 结构</h4>
+
+    <p>类和结构有以下几个基本的不同点：</p>
+    <ul>
+        <li>类是引用类型，结构是值类型。</li>
+        <li>结构不支持继承。</li>
+        <li>结构不能声明默认的构造函数。</li>
+    </ul>
+        
+        
+        
+
+    <div style="
+        height: 30px;
+        width: 600px;
+    " class="sdivs">
+        <pre>
+Exp1 ? Exp2 : Exp3;
+        </pre>
+    </div>
+    <p>
+其中，Exp1、Exp2 和 Exp3 是表达式。请注意，冒号的使用和位置。
+    </p><p>
+? 表达式的值是由 Exp1 决定的。如果 Exp1 为真，则计算 Exp2 的值，结果即为整个 ? 表达式的值。如果 Exp1 为假，则计算 Exp3 的值，结果即为整个 ? 表达式的值。
+    </p>
+
+</body>
+</html>

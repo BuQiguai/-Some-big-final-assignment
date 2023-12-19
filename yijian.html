@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/jquery-1.12.4 (1).js"></script>
+    <script type="text/javascript" src="js/wenjian.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/wenjian.css">
+    <title>教程</title>
+    <style>
+        .shadoi{
+            font-size: 15px;
+            color: #ffffff;
+            background-color: rgba(69, 69, 69, 0.82);
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="b">
+    </div>
+    <img src="img/loge.png"  width="300" height="200" id="tupian">
+    <div class="c" id="页面"  style="height: 800px; width: 100%; left: 0; padding: 0;">
+
+        <h1 style="text-align: center;">网站意见反馈</h1>
+        <div style="
+        position: absolute;
+        height: 60%;
+        width: 80%;
+        background-color: #0000005e;
+        margin: 0 5%;
+        padding: 0 5%;
+        border-radius:10px;
+    ">
+        <br>
+        <br>
+        <br>
+        <form>
+            <table style="font-size: 20px;">
+              <tr >
+                <td style="width: 200px;"><label for="feedback-type">意见反馈类型:</label></td>
+                <td style="width: 200px;">
+                  <select id="feedback-type" name="feedback-type" style="
+                  width: 100px;height: 40px;
+                  " class="shadoi">
+                    <option value="设计">设计</option>
+                    <option value="功能">功能</option>
+                    <option value="内容">内容</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="feedback-content">意见反馈具体内容:</label></td>
+                <td><textarea id="feedback-content" name="feedback-content" rows="5" cols="40"
+                    style="
+                width: 700px;height:200px;
+                    " class="shadoi"
+                    ></textarea></td>
+              </tr>
+              <tr>
+                <td><label for="email">邮箱:</label></td>
+                <td><input type="text" id="email" name="email"  style="
+                    width: 500px;height: 30px;
+                    " class="shadoi"></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td><input value="提交" 
+                    type="button"
+                id="提交"
+                style="
+                    width: 300px;height: 40px;
+                    " class="shadoi"></td>
+              </tr>
+            </table>
+          </form>
+    </div>
+
+    </div>
+    <div class="a" id="顶部">
+        <ul>
+            <li id="首页按钮">
+                <a >首页</a>
+            </li>
+            <li id="教程按钮">
+                <a >教程</a>
+            </li>
+            <li id="工具按钮">
+                <a>工具</a>
+            </li>
+            <li id="搜索按钮">
+                <a>搜索</a>
+            </li>
+            <li id="联系按钮">
+                <a>联系我们</a>
+            </li>
+        </ul>
+    </div>
+    
+</div>
+</body>
+</html>

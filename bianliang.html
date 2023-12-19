@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>教程</title>
+    <style>
+        p{
+         text-indent: 2em; /* 设置首行缩进为 2em */
+        }
+        .sdivs{
+            background-color: #0000005e;
+        padding: 10px;
+        border-radius:10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <h2>变量</h2>
+    <p>一个变量只不过是一个供程序操作的存储区的名字。在 C# 中，每个变量都有一个特定的类型，类型决定了变量的内存大小和布局。范围内的值可以存储在内存中，可以对变量进行一系列操作。
+    </p><p>
+        我们已经讨论了各种数据类型。C# 中提供的基本的值类型大致可以分为以下几类：
+</p><p>
+    <div style="
+        height: 120px;
+        width: 600px;
+    " class="sdivs">
+        <pre>
+类型	        举例
+整数类型	    sbyte、byte、short、ushort、int、uint、long、ulong 和 char
+浮点型	        float 和 double
+十进制类型	    decimal
+布尔类型	    true 或 false 值，指定的值
+空类型	        可为空值的数据类型
+        </pre>
+    </div>
+
+</p>
+<p>C# 允许定义其他值类型的变量，比如 enum，也允许定义引用类型变量，比如 class。这些我们将在以后的章节中进行讨论。在本章节中，我们只研究基本变量类型.
+    <h4>变量定义</h4>
+</p><p>C# 中变量定义的语法：
+</p>
+<div style="
+height: 50px;
+width: 300px;
+"  class="sdivs">
+<p>< data_type >< variable_list >;</p>
+</div><p>在这里，data_type 必须是一个有效的 C# 数据类型，可以是 char、int、float、double 或其他用户自定义的数据类型。variable_list 可以由一个或多个用逗号分隔的标识符名称组成。
+      </p><p>一些有效的变量定义如下所示:
+      </p><p>  <div style="
+        height: 100px;
+        width: 300px;
+    " class="sdivs">
+            <pre>
+int i, j, k;
+char c, ch;
+float f, salary;
+double d;
+            </pre>
+        </div>
+
+    </p><p>您可以在变量定义时进行初始化：
+
+      </p><p><div style="
+        height: 50px;
+        width: 200px;
+    " class="sdivs">
+            <pre>
+int i = 100;
+            </pre>
+        </div>
+
+      </p><p>
+
+    <h4>变量初始化</h4>
+</p><p>变量通过在等号后跟一个常量表达式进行初始化（赋值）。初始化的一般形式为：
+  
+</p><p><div style="
+    height: 50px;
+    width: 250px;
+"  class="sdivs">
+        <pre>
+variable_name = value;
+        </pre>
+    </div>
+    </p><p>变量可以在声明时被初始化（指定一个初始值）。初始化由一个等号后跟一个常量表达式组成，如下所示：
+    </p><p><div style="
+        height: 50px;
+        width: 400px;
+    "  class="sdivs">
+            <pre>
+< data_type > < variable_name > = value;
+            </pre>
+
+        </div>
+    <h4></h4>
+</p><p>
+   一些实例：
+</p><p>
+    <div style="
+        height: 100px;
+        width: 400px;
+    "  class="sdivs">
+        <pre>
+int d = 3, f = 5;    /* 初始化 d 和 f. */
+byte z = 22;         /* 初始化 z. */
+double pi = 3.14159; /* 声明 pi 的近似值 */
+char x = 'x';        /* 变量 x 的值为 'x' */
+        </pre>
+    </div>
+
+</p><p>接受来自用户的值
+    System 命名空间中的 Console 类提供了一个函数 ReadLine()，用于接收来自用户的输入，并把它存储到一个变量中。
+    </p><p>函数 Convert.ToInt32() 把用户输入的数据转换为 int 数据类型，因为 Console.ReadLine() 只接受字符串格式的数据。
+    </p><p>
+    <h4>Lvalues 和 Rvalues</h4>
+</p><p>
+    C# 中的两种表达式：
+</p><p>
+    1.lvalue:lvalue 表达式可以出现在赋值语句的左边或右边。<br>
+</p><p>
+    2.rvalue:rvalue 表达式可以出现在赋值语句的右边，不能出现在赋值语句的左边。<br>
+</p><p>
+    变量是 lvalue 的，所以可以出现在赋值语句的左边。数值是 rvalue 的，因此不能被赋值，不能出现在赋值语句的左边。下面是一个有效的语句：<br>
+</p><p>
+    <div style="
+    height: 50px;
+    width: 200px;
+"  class="sdivs">
+        <pre>
+int g = 20;
+        </pre>
+    </div>
+    </p><p>下面是一个无效的语句，会产生编译时错误：
+    </p><p>
+    <div style="
+    height: 50px;
+    width: 200px;
+"  class="sdivs">
+        <pre>
+10 = 20;
+        </pre>
+    </div>
+</p>
+
+</body>
+</html>
